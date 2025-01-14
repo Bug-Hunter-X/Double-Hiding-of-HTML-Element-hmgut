@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correct way to hide the div - Choose only one of the following
+    //document.getElementById("myDiv").style.display = "none";  // Preferred for complete removal from layout
+    //document.getElementById("myDiv").style.visibility = "hidden"; // Keeps element in layout but hides it
+  </script>
+</body>
+</html>
